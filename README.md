@@ -1,6 +1,4 @@
-Sure! Here's the documentation translated into English:
-
-# Telegram Channel Content Redirection
+# TG-Binder
 
 This application allows you to redirect content from one Telegram channel to another. It uses the `telegram` library to interact with the Telegram API and requires the presence of API ID and API Hash for authorization.
 
@@ -32,13 +30,14 @@ This application allows you to redirect content from one Telegram channel to ano
    ```javascript
    // Authorization in the client
 
-   // {
-   //   phoneNumber: async () => await input.text("Please enter your phone number: "),
-   //   password: async () => await input.text("Please enter your password: "),
-   //   phoneCode: async () =>
-   //     await input.text("Please enter the code you received: "),
-   //   onError: (err) => console.log(err),
-   // }
+   {
+      phoneNumber: async () => await input.text("Please enter your phone number: "),
+      password: async () => await input.text("Please enter your password: "),
+      phoneCode: async () =>
+      await input.text("Please enter the code you received: "),
+      onError: (err) => console.log(err),
+   }
+   
    ```
 
 ## Running
