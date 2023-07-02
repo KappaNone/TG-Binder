@@ -43,7 +43,7 @@ const finalChannelId = 'ENTER_YOUR_VALUE';
 
   client.addEventHandler(async (event) => {
 
-    if (event.message && event.message.peerId.channelId && event.message.peerId.channelId.value === sourceChannelId) {
+    if (event.message && event.message.peerId && event.message.peerId.channelId.value === sourceChannelId) {
       let msg = event.message.message
       console.log(msg);
       await client.sendMessage(finalChannelId, { message: msg })
