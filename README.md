@@ -52,7 +52,6 @@ The application will connect to the Telegram API and begin redirecting content f
 
 ## Notes
 
-- Your Telegram account associated with the API ID and API Hash should be an administrator of both the source and final channels.
 - Please note that a working internet connection is required for the program to function properly.
 - You can use the `client.getDialogs()` function to retrieve the IDs of all channels available to your Telegram account. Uncomment the corresponding code block in the program to display information about the channels and their IDs.
 - Check the console logs to track messages and any potential errors.
