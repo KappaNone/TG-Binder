@@ -48,8 +48,7 @@ const finalChannelId = process.env.FINAL_CHANNEL_ID;
   client.addEventHandler(async (event) => {
 
     if (event.message?.peerId?.channelId?.value === sourceChannelId) {
-      
-      let msg = event.message.message
+      let msg = event.message.message;
       console.log(msg);
 
       const firstCodePoint = msg.codePointAt(0);
@@ -58,7 +57,6 @@ const finalChannelId = process.env.FINAL_CHANNEL_ID;
       if (isEmojiCharacter) {
         await client.sendMessage(finalChannelId, { message: msg });
       }
-
     }
 
   });

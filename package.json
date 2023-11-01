@@ -1,7 +1,7 @@
 {
   "name": "tg-binder",
   "version": "1.0.0",
-  "description": "This is a tiny program based on GramJS that uses the Telegram Bot API to forward messages from a Telegram channel to another Telegram channel you created.",
+  "description": "This is a tiny NodeJS program based on GramJS to forward messages from a Telegram channel to another Telegram channel you created.",
   "main": "core.js",
   "scripts": {
     "start": "node core.js"
